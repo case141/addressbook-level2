@@ -4,8 +4,12 @@ import seedu.addressbook.common.Messages;
 import seedu.addressbook.data.person.ReadOnlyPerson;
 import seedu.addressbook.data.person.UniquePersonList.PersonNotFoundException;
 
-import java.util.*;
-
+import java.util.Set;
+import java.util.List;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Deletes all people identified using with the same name from the address book.
