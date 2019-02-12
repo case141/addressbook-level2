@@ -111,6 +111,25 @@ Deletes the 2nd person in the address book.
 `delete 1` +
 Deletes the 1st person in the results of the `find` command.
 
+== Deleting person(s) by name: `deletebyname`
+
+Deletes all persons matching the names entered from the address book. Irreversible. +
+Format: `deletebyname NAME`
+
+****
+Deletes all persons matching the same `NAME`.
+****
+
+Examples:
+
+* `list` +
+`deletebyname John` +
+Deletes the person(s) containing the name 'John' in the address book.
+
+* `find John Doe` +
+`delete John Doe` +
+Deletes person(s) with the name John or Doe or John Doe.
+
 == View non-private details of a person : `view`
 
 Displays the non-private details of the specified person. +
