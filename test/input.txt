@@ -141,6 +141,25 @@
   list
 
 ##########################################################
+# test delete person(s) by name command
+##########################################################
+
+# last active view: [1] betsy [2] charlie
+  add John Doe p/98765432 e/johnd@gmail.com a/311, Clementi Ave 2, #02-25 t/friends t/owesMoney
+  add John Doe p/99221133 e/johnd2@gmail.com a/123, Tampines Ave 2, #06-25 t/friends
+  add John Lim p/98765432 e/johnlim@gmail.com a/555, Hougang Ave 2, #02-25 t/friends
+  add Tom Lim p/81123344 e/tomlim@gmail.com a/555, Hougang Ave 2, #06-25 t/friends
+
+# should catch invalid args format
+  deletebyname
+
+# deletes correct person(s)
+  deletebyname John Doe
+
+# should have deleted based on last active view's name
+  list
+
+##########################################################
 # test clear command
 ##########################################################
 

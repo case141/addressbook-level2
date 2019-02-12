@@ -12,6 +12,9 @@
 || delete: Deletes the person identified by the index number used in the last person listing.
 || Parameters: INDEX
 || Example: delete 1
+|| deletebyname: Deletes all persons whose names contain any of the specified keywords (case-sensitive)
+|| Parameters: NAME
+|| Example: deletebyname John
 || Clears address book permanently.
 || Example: clear
 || find: Finds all persons whose names contain any of the specified keywords (case-sensitive) and displays them as a list with index numbers.
@@ -289,6 +292,38 @@
 || 	2. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
 || 
 || 2 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  add John Doe p/98765432 e/johnd@gmail.com a/311, Clementi Ave 2, #02-25 t/friends t/owesMoney]
+|| New person added: John Doe Phone: 98765432 Email: johnd@gmail.com Address: 311, Clementi Ave 2, #02-25 Tags: [owesMoney][friends]
+|| ===================================================
+|| Enter command: || [Command entered:  add John Doe p/99221133 e/johnd2@gmail.com a/123, Tampines Ave 2, #06-25 t/friends]
+|| New person added: John Doe Phone: 99221133 Email: johnd2@gmail.com Address: 123, Tampines Ave 2, #06-25 Tags: [friends]
+|| ===================================================
+|| Enter command: || [Command entered:  add John Lim p/98765432 e/johnlim@gmail.com a/555, Hougang Ave 2, #02-25 t/friends]
+|| New person added: John Lim Phone: 98765432 Email: johnlim@gmail.com Address: 555, Hougang Ave 2, #02-25 Tags: [friends]
+|| ===================================================
+|| Enter command: || [Command entered:  add Tom Lim p/81123344 e/tomlim@gmail.com a/555, Hougang Ave 2, #06-25 t/friends]
+|| New person added: Tom Lim Phone: 81123344 Email: tomlim@gmail.com Address: 555, Hougang Ave 2, #06-25 Tags: [friends]
+|| ===================================================
+|| Enter command: || [Command entered:  deletebyname]
+|| Invalid command format! 
+|| deletebyname: Deletes all persons whose names contain any of the specified keywords (case-sensitive)
+|| Parameters: NAME
+|| Example: deletebyname John
+|| ===================================================
+|| Enter command: || [Command entered:  deletebyname John Doe]
+|| Deleted Person(s): 
+||  John Doe Phone: 98765432 Email: johnd@gmail.com Address: 311, Clementi Ave 2, #02-25 Tags: [owesMoney][friends]
+||  John Doe Phone: 99221133 Email: johnd2@gmail.com Address: 123, Tampines Ave 2, #06-25 Tags: [friends]
+||  John Lim Phone: 98765432 Email: johnlim@gmail.com Address: 555, Hougang Ave 2, #02-25 Tags: [friends]
+|| 
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Betsy Choo Tags: [secretive]
+|| 	2. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	3. Tom Lim Phone: 81123344 Email: tomlim@gmail.com Address: 555, Hougang Ave 2, #06-25 Tags: [friends]
+|| 
+|| 3 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  clear]
 || Address book has been cleared!
