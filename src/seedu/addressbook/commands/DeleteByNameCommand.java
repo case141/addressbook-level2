@@ -43,8 +43,8 @@ public class DeleteByNameCommand extends Command {
         final List<ReadOnlyPerson> personsFound = getPersonsWithNameContainingAnyKeyword(keywords);
         Iterator<ReadOnlyPerson> it = personsFound.iterator();
         String deletedPersonsList = "";
-        try{
-            for(personsFound.listIterator(); it.hasNext();){
+        try {
+            for(personsFound.listIterator(); it.hasNext();) {
                 ReadOnlyPerson target = it.next();
                 addressBook.removePerson(target);
                 deletedPersonsList += " " + target + "\n";
