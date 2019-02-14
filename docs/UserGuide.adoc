@@ -127,7 +127,7 @@ Examples:
 Deletes the person(s) containing the name 'John' in the address book.
 
 * `find John Doe` +
-`delete John Doe` +
+`deletebyname John Doe` +
 Deletes person(s) with the name John or Doe or John Doe.
 
 == View non-private details of a person : `view`
